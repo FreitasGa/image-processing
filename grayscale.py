@@ -1,21 +1,29 @@
 import cv2 as cv
 
-path = "assets/nepal.jpg"
+
+path = "assets/kyoto.jpg"
+display_width = 600
 
 # Read image
 original = cv.imread(path)
 
-# Resize image
-original = cv.resize(original, (0, 0), fx=0.2, fy=0.2)
+# Define display height
+height, width = original.shape[:2]
+aspect_ratio = width / height
+display_height = int(display_width / aspect_ratio)
 
 # Show original image
+cv.namedWindow("Original", cv.WINDOW_NORMAL)
 cv.imshow("Original", original)
+cv.resizeWindow("Original", display_width, display_height)
 
 # Convert to grayscale
 gray = cv.cvtColor(original, cv.COLOR_BGR2GRAY)
 
 # Show grayscale image
-cv.imshow("Gray Scale", gray)
+cv.namedWindow("Grayscale", cv.WINDOW_NORMAL)
+cv.imshow("Grayscale", gray)
+cv.resizeWindow("Grayscale", display_width, display_height)
 
 # Wait for any key to close windows
 cv.waitKey(0)

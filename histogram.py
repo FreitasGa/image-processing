@@ -1,28 +1,34 @@
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-path = "assets/nepal.jpg"
+path = "assets/kyoto.jpg"
+display_width = 600
 
 # Read image
 original = cv.imread(path)
 
-# Resize image
-original = cv.resize(original, (0, 0), fx=0.2, fy=0.21)
-
-# Show original image
-cv.imshow("Original", original)
+# Define display height
+height, width = original.shape[:2]
+aspect_ratio = width / height
+display_height = int(display_width / aspect_ratio)
 
 # Convert to grayscale
 gray = cv.cvtColor(original, cv.COLOR_BGR2GRAY)
 
 # Show grayscale image
-cv.imshow("Gray Scale", gray)
+cv.namedWindow("Grayscale", cv.WINDOW_NORMAL)
+cv.imshow("Grayscale", gray)
+cv.resizeWindow("Grayscale", display_width, display_height)
 
 # Calculate histogram
 hist = cv.calcHist([gray], [0], None, [256], [0, 256])
 
+# Normalize histogram
+hist /= hist.sum()
+
 # Plot histogram
-plt.plot(hist, label="Histogram")
+plt.plot(hist)
+plt.title("Grayscale Histogram")
 plt.xlabel("Pixel Value")
 plt.ylabel("Frequency")
 plt.show()
