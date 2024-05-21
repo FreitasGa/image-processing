@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12b9113f-3ac0-489f-a42a-1512752c63e4" name="Changes" comment="add ignore file">
+      <change beforePath="$PROJECT_DIR$/.idea/image-processing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/image-processing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grayscale.py" beforeDir="false" afterPath="$PROJECT_DIR$/grayscale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/histogram.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rgb-histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/rgb-histogram.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +94,7 @@
       <workItem from="1715380976872" duration="5834000" />
       <workItem from="1715467724071" duration="916000" />
       <workItem from="1715518505379" duration="3417000" />
+      <workItem from="1716254501144" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -144,9 +144,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="add ignore file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/image_processing$grayscale.coverage" NAME="grayscale Coverage Results" MODIFIED="1715521835516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/image_processing$rgb_histogram.coverage" NAME="rgb-histogram Coverage Results" MODIFIED="1715522293813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/image_processing$grayscale.coverage" NAME="grayscale Coverage Results" MODIFIED="1716254694429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/image_processing$rgb_histogram.coverage" NAME="rgb-histogram Coverage Results" MODIFIED="1716255894322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/image_processing$histogram.coverage" NAME="histogram Coverage Results" MODIFIED="1715521855163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/image_processing$main.coverage" NAME="main Coverage Results" MODIFIED="1715518760083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/image_processing$main.coverage" NAME="main Coverage Results" MODIFIED="1716254689905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
